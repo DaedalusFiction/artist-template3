@@ -42,7 +42,12 @@ const Navbar = () => {
         <Slide
             direction="down"
             in={trigger}
-            sx={{ position: "fixed", top: "0", zIndex: "10" }}
+            sx={{
+                position: "fixed",
+                top: "0",
+                zIndex: "10",
+                display: { xs: "inherit", lg: "none" },
+            }}
         >
             <AppBar position="static">
                 <Container maxWidth="xl">

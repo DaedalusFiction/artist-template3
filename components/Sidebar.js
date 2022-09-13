@@ -12,7 +12,7 @@ const Sidebar = ({ side, light }) => {
     return (
         <Box
             sx={{
-                display: "flex",
+                display: { xs: "none", lg: "flex" },
                 flexDirection: "column",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -38,7 +38,7 @@ const Sidebar = ({ side, light }) => {
                             transform: "rotate(180deg)",
                             writingMode: {
                                 xs: "inherit",
-                                md: "vertical-rl",
+                                lg: "vertical-rl",
                             },
                             textOrientation: "mixed",
                         }}
