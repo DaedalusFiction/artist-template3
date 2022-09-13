@@ -13,16 +13,19 @@ const Hero = () => {
   url(${heroContent.image.url})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50% 5%",
+                padding: "1rem 0",
+                height: "100vh",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
             }}
         >
-            {/* <Header light /> */}
-            <Container maxWidth="lg">
+            <Container maxWidth="xl">
+                {/* <Header light /> */}
                 <Box
                     sx={{
-                        padding: "35vh 0",
                         display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
+                        justifyContent: "end",
                     }}
                 >
                     <Typography
@@ -30,12 +33,14 @@ const Hero = () => {
                         sx={{
                             marginBottom: ".25em",
                             color: lightTheme.palette.custom.light,
-                            textAlign: { xs: "center", md: "left" },
+                            textAlign: "center",
                         }}
                     >
                         {siteName}
                     </Typography>
-                    {/* <Typography
+                </Box>
+            </Container>
+            {/* <Typography
                         variant="h5"
                         sx={{
                             color: lightTheme.palette.custom.lightMuted,
@@ -44,23 +49,22 @@ const Hero = () => {
                     >
                         {heroContent.secondaryText}
                     </Typography> */}
-                    <Box
-                        sx={{
-                            display: "flex",
-                            gap: ".5em",
-                            margin: "1em 0",
-                            justifyContent: { xs: "center", md: "left" },
-                        }}
-                    >
-                        <Link href={heroContent.buttonOne.href}>
+            <Container maxWidth="xl">
+                <Box
+                    sx={{
+                        display: "flex",
+                        gap: ".5em",
+                        justifyContent: "end",
+                    }}
+                >
+                    {/* <Link href={heroContent.buttonOne.href}>
                             <Button
                                 size="large"
                                 variant={heroContent.buttonOne.variant}
                             >
                                 {heroContent.buttonOne.text}
                             </Button>
-                        </Link>
-                    </Box>
+                        </Link> */}
                     <SocialMediaIcons color="primary" fontSize="30px" />
                 </Box>
             </Container>
