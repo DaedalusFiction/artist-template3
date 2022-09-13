@@ -3,17 +3,14 @@ import { Container } from "@mui/system";
 import Link from "next/link";
 import lightTheme from "../../styles/themes/lightTheme";
 import { pages, siteName, heroContent } from "../../siteInfo";
-import Header from "../layout/Header";
 import SocialMediaIcons from "../general/SocialMediaIcons";
-
-const heroImage = "/images/hero.webp";
 
 const Hero = () => {
     return (
         <Box
             sx={{
                 backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-  url(${heroImage})`,
+  url(${heroContent.image.url})`,
                 backgroundSize: "cover",
                 backgroundPosition: "50% 5%",
             }}

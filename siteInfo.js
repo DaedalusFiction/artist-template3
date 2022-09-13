@@ -45,7 +45,7 @@ const header = {
 // 3. Home
 
 const heroContent = {
-    image: { url: "/images/hero.webp", alt: "alt hero text" },
+    image: { url: "/images/hero3.webp", alt: "alt hero text" },
     primaryText: "ARTIST PORTFOLIO TEMPLATE",
     secondaryText: "Created by FictionalWeb.com",
     buttonOne: {
