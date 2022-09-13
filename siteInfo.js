@@ -17,11 +17,12 @@ import lightTheme from "./styles/themes/lightTheme";
 const siteName = "ARTIST PORTFOLIO";
 
 const pages = [
+    { name: siteName, href: "/" },
     { name: "GALLERIES", href: "/projects" },
     { name: "THE PROCESS", href: "/process" },
     // { name: "SERVICES", href: "/services" },
     { name: "ABOUT", href: "/studio" },
-    // { name: "CONTACT", href: "/contact" },
+    { name: "CONTACT", href: "/contact" },
 ];
 
 // 2. Layout

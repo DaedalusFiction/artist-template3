@@ -16,7 +16,7 @@ let lightTheme = createTheme({
         },
         custom: {
             dark: "#000000",
-            darkMuted: "#2c2c2c",
+            darkMuted: "#757575",
             light: "#ffffff",
             lightMuted: "#cacaca",
         },

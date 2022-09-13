@@ -140,34 +140,35 @@ const Navbar = () => {
                             }}
                         >
                             <Box sx={{ display: "flex", alignItems: "center" }}>
-                                {pages.map((page, index) => (
-                                    <Typography
-                                        className="nav-link"
-                                        key={index}
-                                        onClick={() => {
-                                            navigateToTop();
-                                        }}
-                                        //separate styling because can't get NavLink working with hover
-                                        sx={{
-                                            margin: "0 1em",
-                                            "&:hover": {
-                                                color: lightTheme.palette.custom
-                                                    .dark,
-                                            },
-                                        }}
-                                    >
-                                        <Link
-                                            href={page.href}
-                                            style={({ isActive }) =>
-                                                isActive
-                                                    ? activeStyle
-                                                    : inactiveStyle
-                                            }
+                                {false &&
+                                    pages.map((page, index) => (
+                                        <Typography
+                                            className="nav-link"
+                                            key={index}
+                                            onClick={() => {
+                                                navigateToTop();
+                                            }}
+                                            //separate styling because can't get NavLink working with hover
+                                            sx={{
+                                                margin: "0 1em",
+                                                "&:hover": {
+                                                    color: lightTheme.palette
+                                                        .custom.dark,
+                                                },
+                                            }}
                                         >
-                                            {page.name}
-                                        </Link>
-                                    </Typography>
-                                ))}
+                                            <Link
+                                                href={page.href}
+                                                style={({ isActive }) =>
+                                                    isActive
+                                                        ? activeStyle
+                                                        : inactiveStyle
+                                                }
+                                            >
+                                                {page.name}
+                                            </Link>
+                                        </Typography>
+                                    ))}
                             </Box>
                             <Box sx={{ display: "flex", gap: "1em" }}>
                                 <SocialMediaIcons

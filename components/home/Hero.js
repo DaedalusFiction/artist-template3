@@ -18,7 +18,7 @@ const Hero = () => {
                 backgroundPosition: "50% 5%",
             }}
         >
-            <Header light />
+            {/* <Header light /> */}
             <Container maxWidth="lg">
                 <Box
                     sx={{

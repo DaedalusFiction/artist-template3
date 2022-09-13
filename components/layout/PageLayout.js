@@ -6,7 +6,7 @@ import Header from "./Header";
 const PageLayout = ({ name, children }) => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Box className="section">
                 <Container maxWidth="xl">
                     <Typography variant="h1" sx={{ textAlign: "center" }}>
